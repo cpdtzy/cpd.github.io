@@ -1,5 +1,17 @@
-<nav>
-    {% for nav in site.data.navigation %}
-    <a href="{{nav.link}}" {% if page.url== nav.link %}class="current" {% endif %}>{{nav.name}}</a>
-    {% endfor %}
-</nav>
+<header class="flex flex-row justify-between items-center px-8 py-4">
+    <a href="/">
+        {{ site.title }}
+    </a>
+    <nav class="flex flex-row gap-x-4">
+        {% for nav in site.data.navigation %}
+            <a
+                    href="{{ nav.link }}"
+                    class="hover:text-red-400
+{% if page.url == nav.link %} text-red-600 {% endif %}
+"
+            >
+                {{ nav.name }}
+            </a>
+        {% endfor %}
+    </nav>
+</header>
