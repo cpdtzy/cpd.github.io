@@ -1,13 +1,15 @@
 <header class="flex flex-row justify-between items-center px-8 py-4">
-    <a href="/">
-        {{ site.title }}
+    <a href="/" rel="noreferrer" title="{{ site.title }}">
+        <img class="w-20"
+             src="https://th.bing.com/th/id/OIP.zR-xG8Urs1vDsXhbwkS_8wHaHa?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3"
+             alt="{{ site.title }}">
     </a>
-    <nav class="flex flex-row gap-x-4">
+    <nav class="flex flex-row gap-x-8">
         {% for nav in site.data.navigation %}
             <a
                     href="{{ nav.link }}"
-                    class="hover:text-red-600
-{% if page.url == nav.link %} text-red-600 {% endif %}
+                    class="hover:text-gray-400 transition-colors duration-300
+{% if page.url == nav.link %} text-gray-400 font-bold {% else %} text-shadow-lg {% endif %}
 "
             >
                 {{ nav.name }}
