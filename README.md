@@ -9,3 +9,6 @@
 ### gitHub action
 
 **github action** 可以采用 **jekyll** 脚本自动建立，在提交 *main* 分支到仓库后，可以自动执行
+
+>
+模仿 [WIX](https://zh.wix.com/website-template/view/html/2846?originUrl=https%3A%2F%2Fzh.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal&tpClick=view_button&esi=e6a7ef75-4199-4de5-a067-7de41e260c36)
