@@ -6,3 +6,4 @@ vendor
 Gemfile.lock
 /.idea
 node_modules
+/assets/css/out-main.css
